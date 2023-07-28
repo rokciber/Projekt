@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const HomePage = () => {
@@ -6,13 +7,12 @@ const HomePage = () => {
     <div style={styles.container}>
       <h1 style={styles.heading}>Dobrodošli</h1>
       <div style={styles.buttonsContainer}>
-        <button style={styles.button}>
-          Prijavi se
-        </button>
-        
-        <button style={styles.button}>
-          Registracija
-          </button>
+        <Link to="/prijava">
+            <button>Prijava</button>
+        </Link>
+        <Link to="/registracija">
+            <button>Registracija</button>
+        </Link>
         
       </div>
     </div>
@@ -49,8 +49,3 @@ const styles = {
 };
 
 export default HomePage;
-
-
-
-
-
