@@ -1,17 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 
 const HomePage = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Dobrodošli</h1>
+
+      <button>
+        <span class="span-mother">
+            <span>D</span>
+            <span>o</span>
+            <span>b</span>
+            <span>r</span>
+            <span>o</span>
+            <span>d</span>
+            <span>o</span>
+            <span>s</span>
+            <span>l</span>
+            <span>i</span>
+        </span>
+        
+        <span class="span-mother2">
+            <span>D</span>
+            <span>o</span>
+            <span>b</span>
+            <span>r</span>
+            <span>o</span>
+            <span>d</span>
+            <span>o</span>
+            <span>s</span>
+            <span>l</span>
+            <span>i</span>
+        </span>
+</button>
+
+
+
       <div style={styles.buttonsContainer}>
+
         <Link to="/prijava">
-            <button>Prijava</button>
+            <button className="gumb">Prijava</button>
         </Link>
         <Link to="/registracija">
-            <button>Registracija</button>
+            <button className='gumb'>Registracija</button>
         </Link>
         
       </div>
@@ -26,11 +58,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     height: '100vh',
-    backgroundColor: "#0CAFFF",
-  },
-  heading: {
-    fontSize: '2rem',
-    marginBottom: '20px',
+    backgroundColor: "#36454F",
   },
   buttonsContainer: {
     display: 'flex',
