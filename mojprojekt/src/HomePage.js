@@ -5,10 +5,10 @@ import './styles.css';
 
 const HomePage = () => {
   return (
-    <div style={styles.container}>
+    <div className='container2'>
 
       <button>
-        <span class="span-mother">
+        <span className="span-mother">
             <span>D</span>
             <span>o</span>
             <span>b</span>
@@ -21,7 +21,7 @@ const HomePage = () => {
             <span>i</span>
         </span>
         
-        <span class="span-mother2">
+        <span className="span-mother2">
             <span>D</span>
             <span>o</span>
             <span>b</span>
@@ -37,7 +37,7 @@ const HomePage = () => {
 
 
 
-      <div style={styles.buttonsContainer}>
+      <div className='container'>
 
         <Link to="/prijava">
             <button className="gumb">Prijava</button>
@@ -49,31 +49,6 @@ const HomePage = () => {
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
-    backgroundColor: "#36454F",
-  },
-  buttonsContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  button: {
-    padding: '15px 30px',
-    margin: '10px',
-    backgroundColor: 'red',
-    color: '#FFF',
-    textDecoration: 'none',
-    fontSize: '1.2rem',
-    fontWeight: 'bold',
-  },
 };
 
 export default HomePage;

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Up
 import Homepage from './HomePage';
 import Prijava from './prijava';
 import Registracija from './registracija';
+import Dashboard from './dashboard';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Homepage />} /> {/* element namesto component */}
         <Route path="/prijava" element={<Prijava />} /> {/* element namesto component */}
         <Route path="/registracija" element={<Registracija />} /> {/* element namesto component */}
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes> {/* Tukaj uporabimo Routes namesto Switch */}
     </Router>
   );
